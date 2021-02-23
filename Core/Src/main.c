@@ -45,6 +45,8 @@ I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
 int16_t accel_x, accel_y, accel_z, temp;
+int16_t gyro_x, gyro_y, gyro_z;
+
 int16_t x[10], y[10], z[10], t[10];
 
 /* USER CODE END PV */
@@ -105,6 +107,9 @@ int main(void)
 	  accel_x = mpu6050_get_x_axis();
 	  accel_y = mpu6050_get_y_axis();
 	  accel_z = mpu6050_get_z_axis();
+	  gyro_x = mpu6050_get_x_gyro();
+	  gyro_y = mpu6050_get_y_gyro();
+	  gyro_z = mpu6050_get_z_gyro();
 	  temp = mpu6050_get_temp();
 
 	  if(i < 10) {

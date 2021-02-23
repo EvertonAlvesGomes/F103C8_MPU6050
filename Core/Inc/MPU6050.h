@@ -185,7 +185,11 @@ void mpu6050_set_bandwidth(uint8_t bw);
 void mpu6050_set_sample_rate(uint8_t smplr);
 void mpu6050_set_clock_source(uint8_t clk_src);
 int16_t mpu6050_get_x_axis();
+int16_t mpu6050_get_y_axis();
 int16_t mpu6050_get_z_axis();
+int16_t mpu6050_get_x_gyro();
+int16_t mpu6050_get_y_gyro();
+int16_t mpu6050_get_z_gyro();
 int16_t mpu6050_get_temp();
 
 

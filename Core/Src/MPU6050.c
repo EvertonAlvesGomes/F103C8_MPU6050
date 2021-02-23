@@ -119,6 +119,55 @@ int16_t mpu6050_get_z_axis()
 }
 
 
+
+int16_t mpu6050_get_x_gyro()
+{
+	int8_t i2c_rec_data[2];
+	int8_t x_low, x_high;
+	int16_t x;
+
+	i2c_read(MPU6050_ADD, MPU_REG_GYRO_XOUT_H, i2c_rec_data, 2);
+
+	x_high = i2c_rec_data[0];
+	x_low = i2c_rec_data[1];
+	x = (int16_t)(x_high << 8) | (x_low);
+
+	return x;
+}
+
+
+int16_t mpu6050_get_y_gyro()
+{
+	int8_t i2c_rec_data[2];
+	int8_t y_low, y_high;
+	int16_t y;
+
+	i2c_read(MPU6050_ADD, MPU_REG_GYRO_YOUT_H, i2c_rec_data, 2);
+
+	y_high = i2c_rec_data[0];
+	y_low = i2c_rec_data[1];
+	y = (int16_t)(y_high << 8) | (y_low);
+
+	return y;
+}
+
+
+int16_t mpu6050_get_z_gyro()
+{
+	int8_t i2c_rec_data[2];
+	int8_t z_low, z_high;
+	int16_t z;
+
+	i2c_read(MPU6050_ADD, MPU_REG_GYRO_ZOUT_H, i2c_rec_data, 2);
+
+	z_high = i2c_rec_data[0];
+	z_low = i2c_rec_data[1];
+	z = (int16_t)(z_high << 8) | (z_low);
+
+	return z;
+}
+
+
 int16_t mpu6050_get_temp()
 {
 	int8_t i2c_rec_data[2];
