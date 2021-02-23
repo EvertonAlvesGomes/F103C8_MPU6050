@@ -1,0 +1,2 @@
+I2C.c:11:6:i2c_write	32	static
+I2C.c:23:6:i2c_read	32	static

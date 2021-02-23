@@ -1,0 +1,11 @@
+MPU6050.c:13:6:mpu6050_set_sleep_mode	8	static
+MPU6050.c:21:6:mpu6050_set_accel_scale	16	static
+MPU6050.c:29:6:mpu6050_set_gyro_scale	16	static
+MPU6050.c:37:6:mpu6050_set_bandwidth	16	static
+MPU6050.c:44:6:mpu6050_set_sample_rate	16	static
+MPU6050.c:51:6:mpu6050_set_clock_source	16	static
+MPU6050.c:59:6:mpu6050_init	16	static
+MPU6050.c:74:9:mpu6050_get_x_axis	16	static
+MPU6050.c:90:9:mpu6050_get_y_axis	16	static
+MPU6050.c:106:9:mpu6050_get_z_axis	16	static
+MPU6050.c:122:9:mpu6050_get_temp	16	static
